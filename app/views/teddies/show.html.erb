@@ -6,7 +6,9 @@
     <div class="col-sm-12 col-md-6">
       <h1><%= @teddy.name %></h1>
       <p>Some awesome description of our amazing teddy.</p>
-      <p>$$$</p>
+      <p>Amount: <%= humanized_money_with_symbol(@teddy.price, symbol_position: :after) %>
+
+</p>
     </div>
   </div>
 </div>
